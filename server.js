@@ -92,6 +92,11 @@ app.get("/postman", (req, res) => {
   res.send("Welcome to Capitalle API");
 });
 
+// Catch all route
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
+});
+
 // Server setup
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

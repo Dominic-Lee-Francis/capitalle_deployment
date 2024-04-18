@@ -3,14 +3,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
 
-const BASE_URL = process.env.REACT_APP_SERVER_URL;
-
 const Login = () => {
   const google = () => {
-    window.open(`${BASE_URL}/auth/google`, "_self");
+    window.open(`/auth/google`, "_self");
   };
   const github = () => {
-    window.open(`${BASE_URL}/auth/github`, "_self");
+    window.open(`/auth/github`, "_self");
   };
 
   const [user, setUser] = useState(null); // { username: "", password: "" }
@@ -20,7 +18,7 @@ const Login = () => {
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${BASE_URL}/api/login`, {
+      const response = await axios.post(`/api/login`, {
         username,
         password,
       });

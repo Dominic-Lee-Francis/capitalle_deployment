@@ -1,7 +1,7 @@
 const [country, setCountry] = useState(null);
 useEffect(() => {
   const getCountry = async () => {
-    fetch("http://localhost:8080/capital", {
+    fetch("/capital", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ console.log(country);
 useEffect(() => {
   if (user) {
     if (correct) {
-      fetch("http://localhost:8080/capital/updateStreak", {
+      fetch("/capital/updateStreak", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

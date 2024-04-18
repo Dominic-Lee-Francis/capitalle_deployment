@@ -32,7 +32,7 @@ function App() {
     const fetchCountries = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`${BASE_URL}/capital/today`);
+        const response = await fetch(`/capital/today`);
         if (!response.ok) {
           throw new Error("Failed to fetch countries");
         }
@@ -70,7 +70,7 @@ function App() {
     // Fetch the user data from the server
     const getUser = async () => {
       axios
-        .get(`${BASE_URL}/auth/login/success`, {
+        .get(`/auth/login/success`, {
           withCredentials: true,
           headers: {
             Accept: "application/json",
@@ -94,7 +94,7 @@ function App() {
   // JWT Refresh Token
   const refreshToken = async () => {
     try {
-      const response = await axios.post(`${BASE_URL}/api/refresh`, {
+      const response = await axios.post(`/api/refresh`, {
         token: user.refreshToken,
       });
       setUser({

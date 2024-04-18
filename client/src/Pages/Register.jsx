@@ -9,13 +9,11 @@ const Register = () => {
   const [password2, setPassword2] = useState("");
   const [errors, setErrors] = useState([]);
 
-  const BASE_URL = process.env.REACT_APP_SERVER_URL;
-
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
       const body = { username, email, password, password2, errors };
-      const response = await fetch(`${BASE_URL}/auth/register`, {
+      const response = await fetch(`/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
