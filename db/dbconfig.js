@@ -16,8 +16,7 @@ const proConfig = {
 
 // need to alter the pool based on the environment we are in
 const pool = new Pool(
-  //process.env.NODE_ENV === "production" ? proConfig :
-  devConfig
+  process.env.NODE_ENV === "production" ? proConfig : devConfig
 );
 
 module.exports = pool;
