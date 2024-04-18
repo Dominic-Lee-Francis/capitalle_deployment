@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.guessInput {
+  width: 300px;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.flag {
+  max-width: 500px;
+  max-height: 300px;
+  border: 1px solid #000000;
+}
+
+.guessesRed {
+  color: red;
+}

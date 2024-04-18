@@ -1,0 +1,13 @@
+# root .gitignore
+
+/node_modules
+.env
+
+# testing code
+
+
+# token testing
+fakeLocalStorage.json
+
+# Sessions
+/sessions

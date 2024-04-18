@@ -1,0 +1,66 @@
+.contact {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactTitle {
+  position: absolute;
+  top: 70px;
+  color: green;
+}
+
+.contactWrapper {
+  width: 90%;
+  height: 80%;
+  box-shadow: 0px 5px 33px -21px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.contactLeft,
+.contactRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contactCenter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profilePictureContact {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.contactP {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(81, 81, 81);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactListItems {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: rgb(81, 81, 81);
+}

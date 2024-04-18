@@ -1,0 +1,36 @@
+.rulesTitle {
+  text-align: center;
+  padding: 1rem;
+  top: 70px;
+  color: green;
+}
+
+.rulesDescription {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.comingSoon {
+  font-weight: bold;
+}
+
+.rulesList {
+  list-style-type: none;
+  padding: 2rem;
+  margin: 0;
+}
+
+.rulesListItems {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.rulesListItems:hover {
+  background-color: #e6e6e6;
+}
