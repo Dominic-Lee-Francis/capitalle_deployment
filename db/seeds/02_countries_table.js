@@ -5,8 +5,8 @@
 exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex("countries").del();
-  const startDate = new Date("2024-04-12");
-  const endDate = new Date("2024-05-08");
+  const startDate = new Date("2024-04-20");
+  const endDate = new Date("2024-05-30");
   const dates = [];
 
   for (
@@ -375,6 +375,194 @@ exports.seed = async function (knex) {
       hint3: "This capital is 2 words long",
       hint4: "This capital begins with a 'P'",
       hint5: "This capital ends with the word 'Penh'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Cameroon",
+      capital: "Yaoundé",
+      flag: "https://flagcdn.com/cm.svg",
+      description:
+        "Yaoundé is the capital and largest city of Cameroon. It is known for its rich history, diverse culture, and stunning architecture. The city offers a mix of historical landmarks, such as the National Museum and the Reunification Monument, as well as modern attractions, including shopping malls and restaurants. Fun fact: Yaoundé is located on seven hills and offers beautiful views of the surrounding landscape.",
+      hint1: "This capital is known as the 'City of Seven Hills'",
+      hint2: "This capital is the second largest city in Cameroon",
+      hint3: "This capital is 7 letters long",
+      hint4: "This capital begins with a 'Y'",
+      hint5: "This capital ends with the letter 'dé'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Canada",
+      capital: "Ottawa",
+      flag: "https://flagcdn.com/ca.svg",
+      description:
+        "Ottawa is the capital city of Canada. It is known for its stunning architecture, vibrant culture, and beautiful parks. The city offers a mix of historical landmarks, such as the Parliament Hill and the Rideau Canal, as well as modern attractions, including museums and art galleries. Fun fact: Ottawa is located on the Ottawa River and offers scenic views of the surrounding landscape.",
+      hint1: "This capital is the second coldest capital city in the world",
+      hint2: "This capital is known for its tulip festival",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with an 'O'",
+      hint5: "This capital ends with the letter 'a'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Cape Verde",
+      capital: "Praia",
+      flag: "https://flagcdn.com/cv.svg",
+      description:
+        "Praia is the capital and largest city of Cape Verde. It is known for its stunning beaches, vibrant culture, and colorful markets. The city offers a mix of historical landmarks, such as the Nossa Senhora da Graça Church and the Presidential Palace, as well as modern attractions, including shopping malls and restaurants. Fun fact: Praia is located on the southern coast of Santiago Island.",
+      hint1: "This capital is located on the Atlantic Ocean",
+      hint2: "This capital is known for its colorful colonial architecture",
+      hint3: "This capital is 5 letters long",
+      hint4: "This capital begins with a 'P'",
+      hint5: "This capital ends with the letter 'a'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Central African Republic",
+      capital: "Bangui",
+      flag: "https://flagcdn.com/cf.svg",
+      description:
+        "Bangui is the capital and largest city of the Central African Republic. It is known for its rich history, diverse culture, and stunning architecture. The city offers a mix of historical landmarks, such as the Notre-Dame Cathedral and the Boganda Museum, as well as modern attractions, including shopping malls and restaurants. Fun fact: Bangui is located on the Ubangi River and offers beautiful views of the waterfront.",
+      hint1: "This capital is known as the 'City of Palms'",
+      hint2:
+        "This capital is famous because it is the only city in the country",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with a 'B'",
+      hint5: "This capital ends with the letter 'gui'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Chad",
+      capital: "N'Djamena",
+      flag: "https://flagcdn.com/td.svg",
+      description:
+        "N'Djamena is the capital and largest city of Chad. It is known for its rich history, vibrant culture, and stunning architecture. The city offers a mix of historical landmarks, such as the Grand Mosque and the National Museum, as well as modern attractions, including shopping malls and restaurants. Fun fact: N'Djamena is located on the Chari River and offers beautiful views of the waterfront.",
+      hint1: "This capital is known as the 'City of Sands'",
+      hint2: "This capital is the largest city in Chad",
+      hint3: "This capital is 8 letters long",
+      hint4: "This capital begins with an 'N'D",
+      hint5: "This capital ends with the letters 'ena'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Chile",
+      capital: "Santiago",
+      flag: "https://flagcdn.com/cl.svg",
+      description:
+        "Santiago is the capital and largest city of Chile. It is known for its stunning mountain scenery, vibrant culture, and delicious cuisine. The city offers a mix of historical landmarks, such as the Plaza de Armas and the Metropolitan Cathedral, as well as modern attractions, including shopping malls and restaurants. Fun fact: Santiago is located in the central valley of Chile and offers beautiful views of the Andes Mountains.",
+      hint1: "This capital is known for its wine production",
+      hint2:
+        "This capital was founded in 1541 by the Spanish conquistador Pedro de Valdivia",
+      hint3: "This capital is 8 letters long",
+      hint4: "This capital begins with an 'S'",
+      hint5: "This capital ends with the letter 'go'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "China",
+      capital: "Beijing",
+      flag: "https://flagcdn.com/cn.svg",
+      description:
+        "Beijing is the capital city of China. It is known for its rich history, stunning architecture, and vibrant culture. The city offers a mix of historical landmarks, such as the Forbidden City and the Great Wall of China, as well as modern attractions, including shopping malls and restaurants. Fun fact: Beijing hosted the 2008 Summer Olympics.",
+      hint1:
+        "This capital is one of the oldest cities in the world and has been the capital of China for over 800 years",
+      hint2:
+        "This capital houses the largest palace complex in the world, known as the Forbidden City",
+      hint3: "This capital is 7 letters long",
+      hint4: "This capital begins with a 'B'",
+      hint5: "This capital ends with the letters 'g'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Colombia",
+      capital: "Bogotá",
+      flag: "https://flagcdn.com/co.svg",
+      description:
+        "Bogotá is the capital and largest city of Colombia. It is known for its rich history, vibrant culture, and stunning architecture. The city offers a mix of historical landmarks, such as the Gold Museum and the Monserrate Hill, as well as modern attractions, including shopping malls and restaurants. Fun fact: Bogotá is located in the Andes Mountains and offers beautiful views of the surrounding landscape.",
+      hint1: "This capital is one of the highest capital cities in the world",
+      hint2: "Famous for its emeralds and coffee",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with a 'B'",
+      hint5: "This capital ends with the letter 'tá'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Comoros",
+      capital: "Moroni",
+      flag: "https://flagcdn.com/km.svg",
+      description:
+        "Moroni is the capital and largest city of Comoros. It is known for its stunning beaches, vibrant culture, and colorful markets. The city offers a mix of historical landmarks, such as the Old Friday Mosque and the National Museum, as well as modern attractions, including shopping malls and restaurants. Fun fact: Moroni is located on the western coast of Grande Comore Island.",
+      hint1: "This capital is located on the Indian Ocean",
+      hint2: "This capital is known for its volcanic landscapes",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with an 'M'",
+      hint5: "This capital ends with the letter 'i'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Costa Rica",
+      capital: "San José",
+      flag: "https://flagcdn.com/cr.svg",
+      description:
+        "San José is the capital and largest city of Costa Rica. It is known for its rich history, vibrant culture, and stunning architecture. The city offers a mix of historical landmarks, such as the National Theater and the Metropolitan Cathedral, as well as modern attractions, including shopping malls and restaurants. Fun fact: San José is located in the Central Valley of Costa Rica and offers beautiful views of the surrounding mountains.",
+      hint1: "This capital is known for its coffee production",
+      hint2: "This capital is the second largest city in Central America",
+      hint3: "This capital is 2 words long and 7 letters excluding the space",
+      hint4: "This capital begins with an 'S'",
+      hint5: "This capital ends with the letters 'é'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Croatia",
+      capital: "Zagreb",
+      flag: "https://flagcdn.com/hr.svg",
+      description:
+        "Zagreb is the capital and largest city of Croatia. It is known for its rich history, stunning architecture, and vibrant culture. The city offers a mix of historical landmarks, such as the St. Mark's Church and the Zagreb Cathedral, as well as modern attractions, including shopping malls and restaurants. Fun fact: Zagreb is located on the slopes of Medvednica Mountain and offers beautiful views of the surrounding landscape.",
+      hint1: "This capital is known for its Austro-Hungarian architecture",
+      hint2: "Famous people such as Nikola Tesla were born in this capital",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with a 'Z'",
+      hint5: "This capital ends with the letter 'b'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Cuba",
+      capital: "Havana",
+      flag: "https://flagcdn.com/cu.svg",
+      description:
+        "Havana is the capital and largest city of Cuba. It is known for its rich history, vibrant culture, and stunning architecture. The city offers a mix of historical landmarks, such as the Malecón and the Capitolio, as well as modern attractions, including shopping malls and restaurants. Fun fact: Havana is located on the north coast of Cuba and offers beautiful views of the Caribbean Sea.",
+      hint1: "This capital is known for its colorful vintage cars",
+      hint2:
+        "Many famous people such as Ernest Hemingway and Nat King Cole lived in this capital",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with an 'H'",
+      hint5: "This capital ends with the letter 'a'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Cyprus",
+      capital: "Nicosia",
+      flag: "https://flagcdn.com/cy.svg",
+      description:
+        "Nicosia is the capital and largest city of Cyprus. It is known for its rich history, stunning architecture, and vibrant culture. The city offers a mix of historical landmarks, such as the Venetian Walls and the Selimiye Mosque, as well as modern attractions, including shopping malls and restaurants. Fun fact: Nicosia is the last divided capital city in the world, with a UN buffer zone separating the Greek and Turkish Cypriot communities.",
+      hint1:
+        "This capital is the only divided capital in the world between Greek and Turkish Cypriots",
+      hint2: "This capital can be traced back to the Bronze Age",
+      hint3: "This capital is 7 letters long",
+      hint4: "This capital begins with an 'N'",
+      hint5: "This capital ends with the letter 'a'",
+      challenge_date: dates.pop(),
+    },
+    {
+      name: "Czech Republic",
+      capital: "Prague",
+      flag: "https://flagcdn.com/cz.svg",
+      description:
+        "Prague is the capital and largest city of the Czech Republic. It is known for its rich history, stunning architecture, and vibrant culture. The city offers a mix of historical landmarks, such as the Charles Bridge and the Prague Castle, as well as modern attractions, including shopping malls and restaurants. Fun fact: Prague is often called the 'City of a Hundred Spires' due to its many churches and towers.",
+      hint1: "This capital is home to the famous Astronomical Clock",
+      hint2: "This capital is the historical capital of Bohemia",
+      hint3: "This capital is 6 letters long",
+      hint4: "This capital begins with a 'P'",
+      hint5: "This capital ends with the letter 'e'",
       challenge_date: dates.pop(),
     },
   ]);
