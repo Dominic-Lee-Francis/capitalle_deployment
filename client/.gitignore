@@ -10,7 +10,7 @@
 .testCode.js
 
 # production
-/build
+
 
 # misc
 .env
