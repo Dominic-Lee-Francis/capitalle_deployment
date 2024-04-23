@@ -28,7 +28,6 @@ dotenv.config();
 const EXPRESS_SESSION_SECRET_KEY = process.env.EXPRESS_SESSION_SECRET_KEY;
 const PORT = process.env.PORT || 8080;
 const FRONTEND_URL = process.env.FRONTEND_URL;
-// process.env.NODE_ENV = "development";
 
 // Middleware
 app.use(express.json()); // parse json data req.body
@@ -67,12 +66,16 @@ passport.deserializeUser((user, done) => {
 // Cors is used for enabling CORS with various options such as origin, methods, credentials
 app.use(
   cors({
-    origin: FRONTEND_URL,
+    // IMPORTANT: This should be the URL of your React app when you deploy it
+    // IMPORTANT: Change to .env variable FRONTEND_URL when deploying
+    origin: "http://localhost:3000",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
 
+// IMPORTANT: This should be placed after the cors middleware
+// Serve static files from the React app, make sure to run npm run build in the client folder before deploying
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }

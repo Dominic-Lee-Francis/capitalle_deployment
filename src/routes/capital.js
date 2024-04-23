@@ -17,6 +17,16 @@ router.get("/", async (req, res) => {
   }
 });
 
+// List all capitals
+router.get("/all", async (req, res) => {
+  try {
+    const allCapitals = await pool.query("SELECT * FROM countries");
+    res.json(allCapitals.rows);
+  } catch (error) {
+    console.error(error.message);
+  }
+});
+
 // Get a capital assigned todays date under 'challenge_date'
 // DEPLOYMENT CODE - USED IN DEPLOYMENT
 router.get("/today", async (req, res) => {

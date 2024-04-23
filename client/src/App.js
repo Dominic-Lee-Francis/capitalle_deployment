@@ -21,8 +21,6 @@ import jwt_decode from "jwt-decode";
 // react cookies
 import { CookiesProvider } from "react-cookie";
 
-const BASE_URL = process.env.REACT_APP_SERVER_URL;
-
 function App() {
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState();
